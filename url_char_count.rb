@@ -9,7 +9,7 @@ def char_count(url)
     Net::HTTP.get(URI.parse(url))
   end
 
-  page_content_string = open('http://www.google.com')
+  page_content_string = open(url)
 
   char_hash = {}
   
